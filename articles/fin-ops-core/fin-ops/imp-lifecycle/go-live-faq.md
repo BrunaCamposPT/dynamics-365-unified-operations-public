@@ -80,7 +80,7 @@ Yes. As long as the status of the production environment is **Queued**, you can 
 
 ## How long does it take to deploy my production environment?
 
-After the Go-live assessment with the Microsoft FastTrack team is completed and the production request is submitted, deployment of the production environment should be completed within 48 hours.
+After the Go-live assessment/review with the Microsoft FastTrack team is completed and the production request is submitted, deployment of the production environment should be completed within 48 hours.
 
 ## What level of access do I have in my production environment? Can I sign in to the VM?
 
