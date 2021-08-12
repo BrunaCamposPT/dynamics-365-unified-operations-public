@@ -146,7 +146,7 @@ Before requesting the production environment, ensure that all pre-requisites are
 	- Confirm the dates when the source LCS environments and project will be deallocated and deleted.
 	
 4. The Dynamics 365 FO Go-Live team will reply to you within 2 business days and a FastTrack Solution Architect will work with you on the assessment of the project readiness for production deployment.
-5. When the tenant move assessment is successfully completed, the FastTrack Solution Architect will approve your production request for deployment.
+5. When the tenant move assessment is successfully completed, the FastTrack Solution Architect will enable the production configure button in LCS.
 6. Create the production deployment request on the new LCS project.
 
 	- It is not possible to select the same name for the new production environment, as it is in use for your old production environment. You will need to choose a new environment name so that a new URL will be generated.
@@ -155,11 +155,12 @@ Before requesting the production environment, ensure that all pre-requisites are
 
 7. After the production environment has been deployed, verify that source and target environments have exactly the same code, otherwise migration will fail. If necessary, deployable packages must be installed on the target production environment.
 8. Request to copy database and blob storage from the old production environment to the new production environment.
-
-	 - **Cloud deployment to self-service deployment**: [Submit a service request](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) of type **Other** to request that the Microsoft Service Engineering team copy the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in the service request.
-	 
-	 - **Both projects (old and new) are self-service deployments**: Submit a **support ticket** requesting a copy of the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in the support ticket.
-	 
+	 - Please make sure that the old and the new projects are both self-service deployments
+	 - Submit a support request to copy database and blob storage, if applicable, from old production environment to the new production environment, with the following information:
+		- Source LCS project and source tenant ID (can be found on LCS -> Subscription available)
+		- Target LCS project and target tenant ID (can be found on LCS -> Subscription available)
+		- Blob storage copy: Yes/No
+		- Preferable 48h donwtime window
 	 
 	1. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request. 
 	2. After Microsoft has completed the activity and provided you with updated information, you will need to validate the new production environment. 
